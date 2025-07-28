@@ -1,14 +1,13 @@
 from pymongo import MongoClient
+from pymongo.server_api import ServerApi
 import streamlit as st
 from bson.objectid import ObjectId
-
 
 # MongoDB connection setup
 def get_db_connection():
     client = MongoClient(
-        "mongodb+srv://rahulchavali1:bHseoekkUd2b0OzE@chalkboarddb.uemagi8.mongodb.net/?retryWrites=true&w=majority&appName=chalkboardDB",
-        tls=True,
-        tlsAllowInvalidCertificates=True
+        "mongodb+srv://dbstutz11:e9zqVJ4z1s5X7wZO@cluster0.f6cteer.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0",
+        server_api=ServerApi('1')
     )
     db = client["chalkboard_db"]
     return db

@@ -2,6 +2,7 @@ import sys
 import os
 from dotenv import load_dotenv
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
+sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from llama_index.readers.youtube_transcript import YoutubeTranscriptReader
 from llama_index.readers.assemblyai import AssemblyAIAudioTranscriptReader
 import assemblyai as aai
@@ -12,8 +13,8 @@ import streamlit as st
 from docx import Document
 from io import BytesIO
 from fpdf import FPDF
-from custom_css import add_custom_css
-from custom_html import add_custom_html
+from utils.custom_css import add_custom_css
+from utils.custom_html import add_custom_html
 from mongodb_handler import save_notes, get_notes_by_subject, get_subjects, delete_note
 from audio_extract import extract_audio
 

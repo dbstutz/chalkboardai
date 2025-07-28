@@ -35,4 +35,4 @@ Chalkboard is designed for students who miss lectures or want fast, structured r
 
 ```bash
 pip install -r requirements.txt
-streamlit run transcript.py
+streamlit run backend/app.py
