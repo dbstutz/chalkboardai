@@ -1,20 +1,38 @@
-## LabLab.Ai Hackathon
-# Chalkboard.ai: A revolutionary study tool that utilizes the Llama3 Model to transcribe YouTube/personal videos into customizable notes for any subject
+# Chalkboard.ai (Hackathon Finalist)
 
-- Our study tool targets students that have missed lectures or are looking for a quick summary on content that they need to learn. The solution that we’ve developed saves students from having to watch through entire lecture videos and instead allows them to study the main concepts. With LlamaIndex readers, we streamlined the process of uploading videos so that the user can upload YouTube links or directly from local files. The readers transform the uploads into a transcript which is then analyzed by the Llama3 Model, which extracts the key points from the transcript. We’ve given the user an option to adjust the conciseness of these notes depending on whether they just want a quick summary or a comprehensive review of the lecture. Once the summarized notes are generated, the user can choose to edit the notes directly on the website. On top of that, our MongoDB database enables users to organize and save their notes into distinguishable folders, providing the app with immense reuse value. Or, they can opt to save their notes as a pdf/docx. In the future, we’d like to implement a Question/Answer feature where the user can ask questions about the content. We would also like to implement a calendar where users can schedule their classes, assignments, notes, etc. for further organization. 
+**Chalkboard.ai** is an AI-powered note-taking tool that transcribes lecture videos and generates customizable study notes using the LLaMA 3 model. Built during the LabLab.ai LLaMA3 Hackathon, it helps students save time by summarizing full-length lecture content into clear, editable study materials.
 
-- This was Built in Python, HTML, and CSS using Streamlit and Meta's LLaMA
-- The backend is built in MongoDB using pymongo
-- Built for LabLab.ai 48 hr LLaMa3 Hackathon
+---
 
-<img width="1465" alt="Screenshot 2024-07-20 at 6 32 58 PM" src="https://github.com/user-attachments/assets/3732defa-a07e-4f9a-b205-ec4dc3da6da6">
-https://www.loom.com/share/d7793752fe7641d89a9dc7a0032f36b9?sid=4b02f2f5-89c8-44e5-9d30-ae130bbadd14
+## 🎯 Project Purpose
 
-## Presentation:
-- (https://github.com/user-attachments/files/16324686/chalkboard.ai.pdf)
+Chalkboard is designed for students who miss lectures or want fast, structured reviews of course material. Users can upload a video (or YouTube link), auto-generate a transcript using AssemblyAI, and then summarize it into notes with adjustable detail using LLaMA 3.
 
-## Installation
-- run the requirements.txt file (pip install -r requirements.txt) and run the transcript.py file (streamlit run transcript.py), then generate notes!
-- (ps. you will need to use your own AssemblyAI and GroqCloud API Key)
+---
 
+## 🛠️ Tech Stack
 
+- **Frontend**: Streamlit, HTML, CSS
+- **Backend**: Python
+- **LLM**: Meta LLaMA 3 (via GroqCloud)
+- **Transcription**: AssemblyAI
+- **Database**: MongoDB (via `pymongo`)
+
+---
+
+## 🔧 Features
+
+- 🧠 Transcribe YouTube links or local video files into structured text  
+- ✂️ Summarize transcripts into **concise or comprehensive notes** using LLaMA 3  
+- ✏️ Edit notes directly in the browser interface  
+- 📂 Save notes into named folders with **MongoDB** for reuse  
+- 📄 Export notes as `.pdf` or `.docx`  
+- 🧪 Future roadmap: Q&A on video content + calendar integration
+
+---
+
+## 🚀 Getting Started
+
+```bash
+pip install -r requirements.txt
+streamlit run transcript.py
