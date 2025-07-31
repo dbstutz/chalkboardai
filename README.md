@@ -1,6 +1,6 @@
 # Chalkboard.ai
 
-**Chalkboard.ai** is an AI-powered note-taking tool that transcribes lecture videos and generates customizable study notes using the LLaMA 3 model. Built during the LabLab.ai LLaMA3 Hackathon, it helps students save time by summarizing full-length lecture content into clear, editable study materials.
+**Chalkboard.ai** is an AI-powered note-taking tool that transcribes lecture videos and generates customizable study notes using the LLaMA 3 model. Built during the LabLab.ai LLaMA3 Hackathon, it helps students save time by summarizing full-length lecture content into clear, editable study materials. Team was chosen as one of 5 finalists from 500+ teams and 7500+ participants (Top 1% of competitors).
 
 ---
 
